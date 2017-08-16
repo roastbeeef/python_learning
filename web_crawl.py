@@ -22,7 +22,13 @@ soup = BeautifulSoup(html, 'html.parser')
 soup.title
 # returning a paragraph
 soup.p
-# you can drill down further into the child tags...
+# you can drill down further into the child tags... ()
 soup.p.b
-# and even further...
+# and even further... (anchor tags for the hyperlink)
 soup.p.b.a
+# finds all anchor tags within the page
+soup.find_all('a')
+# finds a div item
+soup.find(id="mw-page-base")
+
+soup.div
